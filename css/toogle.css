@@ -1,0 +1,38 @@
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* background-color: red; */
+}
+
+.dark{
+    background-color: #000000;
+    color: #fff;
+}
+.contenedor{
+    background-color: #fff;
+    margin-top: 50vh;
+    margin-left: 50%;
+    width: 80px;
+    height: 40px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    box-shadow: inset 8px 8px 16px rgba(0, 0, 0, .8);
+}
+
+.toggle{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: #1ff;
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px #1ff;
+    transition: .2s;
+}
+.active{
+    /* left: 32px; */
+    transform: translateX(32px);
+    box-shadow: 4px 4px 16px #1ff;
+}
